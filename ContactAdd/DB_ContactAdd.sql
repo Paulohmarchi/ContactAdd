@@ -1,0 +1,17 @@
+DROP DATABASE IF EXISTS db_contactadd;
+CREATE DATABASE db_contactadd;
+USE db_contactadd;
+CREATE TABLE contato(
+	Cod_Cont SMALLINT AUTO_INCREMENT NOT NULL,
+	Nome_Cont VARCHAR(100) NOT NULL,	
+	Email_Cont VARCHAR(100) NOT NULL,
+	Sexo_Cont VARCHAR(15) NULL,	
+	DataNas_Cont VARCHAR(16) NULL,
+	Cidade_Cont	VARCHAR(50) NULL,
+	Estado_Cont	VARCHAR(50) NULL,
+	Endereco_Cont	VARCHAR(100) NULL,
+	Tel_Cont	VARCHAR(20) NULL,
+	Cel_Cont	VARCHAR(20) NULL,
+	Obs_Cont	VARCHAR(100) NULL,
+	Foto_Cont	VARCHAR(1000) NULL,
+	CONSTRAINT Cod_Cont PRIMARY KEY(Cod_Cont));
